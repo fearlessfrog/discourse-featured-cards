@@ -76,7 +76,8 @@ export default Component.extend({
     if (isMobile && !settings.display_mobile) return false;
     if (currentRoute) {
       if (settings.show_on === "homepage") {
-        console.log('Route    : ' + JSON.stringify(currentRoute));
+        console.log('Route : ');
+        console.debug(currentRoute);
         console.log('RouteName: ' + currentRouteName);
         return currentRouteName == `discovery.${defaultHomepage()}`;
       } else if (settings.show_on === "top_menu") {
