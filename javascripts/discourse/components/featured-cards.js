@@ -79,7 +79,7 @@ export default Component.extend({
         // console.log('Route : ');
         // console.debug(currentRoute);        
         // console.log('RouteName: ' + currentRouteName);
-        if (((currentRoute.attributes) && (currentRoute.attributes.category)) {
+        if ((currentRoute.attributes) && (currentRoute.attributes.category)) {
           return currentRoute.attributes.category.name == "Articles";
         }
         // return currentRouteName == `discovery.${defaultHomepage()}`;
