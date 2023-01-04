@@ -76,10 +76,11 @@ export default Component.extend({
     if (isMobile && !settings.display_mobile) return false;
     if (currentRoute) {
       if (settings.show_on === "homepage") {
-        console.log('Route : ');
-        console.debug(currentRoute);
-        console.log('RouteName: ' + currentRouteName);
-        return currentRouteName == `discovery.${defaultHomepage()}`;
+        // console.log('Route : ');
+        // console.debug(currentRoute);
+        // console.log('RouteName: ' + currentRouteName);
+        return currentRoute.category.name == "Articles";
+        // return currentRouteName == `discovery.${defaultHomepage()}`;
       } else if (settings.show_on === "top_menu") {
         const topMenuRoutes = this.siteSettings.top_menu
           .split("|")
