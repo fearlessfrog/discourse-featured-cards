@@ -79,8 +79,8 @@ export default Component.extend({
         console.log('Route : ');
         console.debug(currentRoute);
         console.log('RouteName: ' + currentRouteName);
-        // return currentRoute.category.name == "Articles";
-        return currentRouteName == `discovery.${defaultHomepage()}`;
+        return currentRoute.category_slug_path_with_id == "articles/5";
+        // return currentRouteName == `discovery.${defaultHomepage()}`;
       } else if (settings.show_on === "top_menu") {
         const topMenuRoutes = this.siteSettings.top_menu
           .split("|")
