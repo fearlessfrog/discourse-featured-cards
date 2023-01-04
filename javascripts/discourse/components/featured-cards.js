@@ -76,10 +76,10 @@ export default Component.extend({
     if (isMobile && !settings.display_mobile) return false;
     if (currentRoute) {
       if (settings.show_on === "homepage") {
-        console.log('Route : ');
-        console.debug(currentRoute);        
-        console.log('RouteName: ' + currentRouteName);
-        if (currentRoute.attributes.category) {
+        // console.log('Route : ');
+        // console.debug(currentRoute);        
+        // console.log('RouteName: ' + currentRouteName);
+        if (((currentRoute.attributes) && (currentRoute.attributes.category)) {
           return currentRoute.attributes.category.name == "Articles";
         }
         // return currentRouteName == `discovery.${defaultHomepage()}`;
